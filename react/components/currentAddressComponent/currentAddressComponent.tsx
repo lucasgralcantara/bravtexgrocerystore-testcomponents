@@ -3,13 +3,6 @@ import "./AddToCartQuantityStepper.css";
 import Modal from "./Modal.js";
 const pin = require("./pin.svg") as string
 
-const CSS_HANDLES = [
-  "containerAddCartButton",
-  "containerQuantity",
-  "contentAddedToCartTxt",
-  "contentQuantity",
-];
-
 const CurrentAddressComponent = () => {
 
   const [localidade, setLocalidade] = React.useState("");
