@@ -1,6 +1,6 @@
 {
   "vendor": "bravtexgrocerystore",
-  "name": "bravtexgrocery-newcomponents",
+  "name": "bravtexgrocery-testnewcomponents",
   "version": "0.1.0",
   "builders": {
     "react": "3.x",
