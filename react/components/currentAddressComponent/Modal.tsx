@@ -1,7 +1,12 @@
 import "./modal.css";
 import React from "react";
 
-export default function Modal({ handleClose, show }) {
+interface IProps {
+    handleClose: any;
+    show: any;
+}
+
+export default function Modal({ handleClose, show }: IProps) {
   const showHideClassName = show ? "modal display-block" : "modal display-none";
   const [cep, setCep] = React.useState("");
 
@@ -25,7 +30,7 @@ export default function Modal({ handleClose, show }) {
           <label className="modalLabel">
             <input
               className="modalInput"
-              maxLength="8"
+              maxLength={8}
               onChange={(event) => {
                 if (
                   event.target.value.length === 8 &&
